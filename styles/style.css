@@ -1,0 +1,156 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #1e40af;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+section p, section ul {
+    font-size: 1.125rem;
+    margin: 0.5rem 0;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+/* Alternating Background Colors for Sections */
+#discovery, #principal {
+    background-color: #ffe9c5 !important;
+}
+
+#landing, #stats, #favorites {
+    background-color: #322C2B !important;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Card Styling */
+.card-icon {
+    color: #4a90e2;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    section {
+        padding: 4rem 2rem;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    section p, section ul {
+        font-size: 1.25rem;
+    }
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+header {
+    position: relative;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    background: url('images/bg-chess.jpg') no-repeat center center/cover;
+    background-size: cover; /* Ensure the image covers the entire header */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.profile-card {
+    width: 100%; /* Ensures each card takes up the full width of the container */
+    max-width: 300px; /* Adjust maximum width as needed */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    margin-right: 1rem; /* Adjust margin between cards */
+    margin-bottom: 1rem; /* Adjust margin bottom */
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder background */
+    margin: 0 auto 1rem; /* Center and margin bottom */
+}
+
+.expand-button {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.expanded-content {
+    margin-top: 1rem;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        width: calc(50% - 1rem); /* Adjust width for smaller screens */
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
